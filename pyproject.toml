@@ -1,0 +1,10 @@
+[project]
+name = "factory-oee-monitor"
+version = "0.1.0"
+description = "Factory Production Monitoring (OEE) for Indonesian industrial estates"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
