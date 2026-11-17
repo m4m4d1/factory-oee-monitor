@@ -41,7 +41,7 @@ production time after a 60-minute meal break. 85% OEE is the commonly cited worl
 
 - [x] Mon: scaffold, plants, lines and data model
 - [x] Tue: production simulator and storage
-- [ ] Wed: REST API, OEE calculation and alerts
+- [x] Wed: REST API, OEE calculation and alerts
 - [ ] Thu: dashboard
 - [ ] Fri: plant map and alerts panel
 - [ ] Sat: Docker, tests and documentation
