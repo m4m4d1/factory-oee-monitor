@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Bilingual (EN/ID) dashboard: KPIs, line table, line detail with 72-hour OEE chart and stops,
+  downtime Pareto and OEE by shift.
 - REST API: lines, plants, history, shifts, downtime Pareto, alerts, and ingest endpoints for
   production and downtime (`/docs` for details).
 - OEE (availability × performance × quality) per hour, shift, line and plant, with bands and alerts

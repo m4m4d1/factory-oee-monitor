@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Factory Production Monitoring (OEE) · Indonesia</title>
+<meta name="description" content="Production lines in Indonesian industrial estates: output, downtime, quality and OEE per line and shift.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="logo" aria-hidden="true">▣</div>
+    <div class="title">
+      <h1><span class="t-en">Factory Production Monitoring (OEE)</span><span class="t-id">Pemantauan Produksi Pabrik (OEE)</span></h1>
+      <p><span class="t-en">Indonesian industrial estates · fictional plants · last 24 hours</span><span class="t-id">Kawasan industri Indonesia · pabrik fiktif · 24 jam terakhir</span></p>
+    </div>
+    <div class="top-right">
+      <span class="pill demo-pill"><span class="t-en">Demo · simulated data</span><span class="t-id">Demo · data simulasi</span></span>
+      <span class="pill" id="updated">…</span>
+      <button class="lang" type="button" aria-label="Switch language"><span data-l="en">EN</span><span data-l="id">ID</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="kpis" id="kpis" aria-label="Summary"></section>
+
+  <section class="grid">
+    <div class="panel">
+      <h2><span class="t-en">Production lines</span><span class="t-id">Lini produksi</span><span class="muted"><span class="t-en">click a row for details</span><span class="t-id">klik baris untuk detail</span></span></h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr>
+            <th><span class="t-en">Line</span><span class="t-id">Lini</span></th>
+            <th>Status</th>
+            <th class="num"><span class="t-en">OEE shift</span><span class="t-id">OEE shift</span></th>
+            <th class="num">OEE 24h</th>
+            <th class="num">A</th>
+            <th class="num">P</th>
+            <th class="num">Q</th>
+          </tr></thead>
+          <tbody id="line-rows"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="panel" id="detail">
+      <div class="detail-head">
+        <div>
+          <h3 id="d-name">…</h3>
+          <div class="muted" id="d-where"></div>
+          <div id="d-status"></div>
+        </div>
+        <div class="big-index"><b id="d-oee">–</b><div class="muted"><span class="t-en">OEE this shift</span><span class="t-id">OEE shift ini</span></div></div>
+      </div>
+      <div class="params" id="d-params"></div>
+      <div class="shift-chips" id="d-shifts"></div>
+      <div class="chart-box"><canvas id="d-chart" aria-label="OEE, last 72 hours"></canvas></div>
+      <h4><span class="t-en">Stops, last 24 hours</span><span class="t-id">Henti, 24 jam terakhir</span></h4>
+      <ul class="stops" id="d-stops"></ul>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="panel">
+      <h2><span class="t-en">Downtime Pareto</span><span class="t-id">Pareto waktu henti</span><span class="muted"><span class="t-en">all plants, 24 h</span><span class="t-id">semua pabrik, 24 jam</span></span></h2>
+      <div class="chart-box"><canvas id="pareto-chart" aria-label="Downtime minutes by reason"></canvas></div>
+    </div>
+    <div class="panel">
+      <h2><span class="t-en">OEE by shift</span><span class="t-id">OEE per shift</span><span class="muted"><span class="t-en">all lines, 24 h</span><span class="t-id">semua lini, 24 jam</span></span></h2>
+      <div class="shifts" id="shifts"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="t-en">OEE = availability × performance × quality (Nakajima, TPM). 85% world class and 65% floor are industry conventions. Companies are fictional; data is simulated. Open source (MIT).</span>
+  <span class="t-id">OEE = ketersediaan × performa × kualitas (Nakajima, TPM). 85% kelas dunia dan batas 65% adalah konvensi industri. Perusahaan fiktif; data simulasi. Sumber terbuka (MIT).</span>
+  <a href="https://github.com/m4m4d1/factory-oee-monitor">GitHub</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
