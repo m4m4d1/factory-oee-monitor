@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Plant map (colour by OEE band, red ring when a line is stopped) and a 24-hour alerts panel linked
+  to the line detail.
 - Bilingual (EN/ID) dashboard: KPIs, line table, line detail with 72-hour OEE chart and stops,
   downtime Pareto and OEE by shift.
 - REST API: lines, plants, history, shifts, downtime Pareto, alerts, and ingest endpoints for
