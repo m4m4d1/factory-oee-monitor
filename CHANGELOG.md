@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Dockerfile, tests for the production and downtime ingest endpoints and API key, and full
+  documentation.
 - Plant map (colour by OEE band, red ring when a line is stopped) and a 24-hour alerts panel linked
   to the line detail.
 - Bilingual (EN/ID) dashboard: KPIs, line table, line detail with 72-hour OEE chart and stops,
