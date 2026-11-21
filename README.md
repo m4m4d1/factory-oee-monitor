@@ -9,6 +9,8 @@ shift falls below 65% OEE or a line stops for more than 30 minutes.
 > Week 4 of Nusantara Intel: one new open-source
 > information system for Indonesia every week, built in public one step per day.
 
+**Live demo:** https://m4m4d1.github.io/factory-oee-monitor/ (simulated data)
+
 ## Features
 
 - **7 plants, 19 lines** in KIIC and Suryacipta (Karawang), Jababeka and MM2100 (Cikarang),
@@ -120,7 +122,7 @@ pytest -q
 The demo data is simulated: the industrial estates and their locations are real, the companies and
 all production figures are not.
 
-## Roadmap this week
+## Built this week
 
 - [x] Mon: scaffold, plants, lines and data model
 - [x] Tue: production simulator and storage
@@ -128,7 +130,7 @@ all production figures are not.
 - [x] Thu: dashboard
 - [x] Fri: plant map and alerts panel
 - [x] Sat: Docker, tests and documentation
-- [ ] Sun: live demo and v1.0 release
+- [x] Sun: live demo and v1.0 release
 
 ## License
 

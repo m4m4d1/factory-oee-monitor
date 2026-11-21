@@ -1,7 +1,10 @@
 # Changelog
 
-## Unreleased
+## 1.0.0
 
+First release.
+
+- Live demo on GitHub Pages, built from a static snapshot of the API (`python -m app.export_demo`).
 - Dockerfile, tests for the production and downtime ingest endpoints and API key, and full
   documentation.
 - Plant map (colour by OEE band, red ring when a line is stopped) and a 24-hour alerts panel linked
